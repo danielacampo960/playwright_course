@@ -28,7 +28,7 @@ test('test 3', async ({page}) => {
   await page.keyboard.press('Enter');
 
   //when finding something in the page, wait in there
-  await expect(page.locator('//ol[contains(@class,\'ui-search-layout\')]')).toBeVisible();
+  await expect(page.locator("//ol[contains(@class,'ui-search-layout')]")).toBeVisible();
 
   //adding a pause
   //await page.pause();
